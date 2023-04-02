@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS KSI</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Poppins:ital,wght@0,100;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <!--Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--bootsstrap-->
+    
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    
+        <nav class="navbar">
+            <a href="#" class="navbar-logo">Kangen<span>Rumah</span></a>
+
+              <div class="navbar-nav">
+                <a href="#home">Beranda</a>
+                <a href="#about">Tentang kami</a>
+                <a href="#menu">Menu Kami</a>
+                <a href="#pesan">Pesan & Ambil</a>
+              </div>
+            
+            <div class="navbar-extra">
+                <a href="#pesan" id="shopping"><i data-feather="shopping-cart"></i></a>
+                <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+            </div>
+            
+        </nav>
+    <!--Navbar End-->
+
+    <!--Hero Section-->
+    <section class="hero" id="home">
+        <main class="content">
+             <h1>Hangat Suasana Rumah Tersaji di <span>Kangen Rumah</span></h1>
+            <p>
+                Jika arti rumah belum kau temukan, maka jadikanlah dirimu sendiri adalah rumah
+            </p>
+            <a href="#pesan" class="cta">Mulai Pesananmu</a>
+         </main>
+
+    </section>
+    <!--Hero Section End-->
+
+    <!--About Start-->
+    <section id="about" class="about">
+        <h2><span>Tentang</span> Kami</h2>
+
+        <div class="row">
+            <div class="about-img">
+                <img src="assets/image/kontak.jpg" alt="tentang kami">
+            </div>
+
+            <div class="content">
+            <h3>Apa itu Kangen Rumah?</h3>
+                 <p>Kangen Rumah adalah sebuah kafe yang mengusung tema rumah, sehingga tiap yang datang akan selalu merasa hangat seperti ketika di rumah.</p>
+                <p>
+                 Menu yang disajikan dibuat dengan penuh dan cinta dan kasih seperti sajian agar yang menikmati dapat merasakan hangatnya suasana rumah.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--About End-->
+
+    <!--Menu Start-->
+    <section id="menu" class="menu">
+        <h2><span>Menu</span> Kami</h2>
+        <p>Sajian yang simpel namun memuaskan, khas masakan rumah kami sajikan disini</p>
+
+        <div class="row">
+            <div class="menu-card">
+                <img src="assets/image/menu1.jpg"alt="kopi rumah">
+                <h3>Kopi Rumah</h3>
+                <p class="menu-card-price">IDR 18K</p>
+            </div>
+            <div class="menu-card">
+                <img src="assets/image/menu2.jpg"alt="kopi tubruk">
+                <h3>Kopi Tubruk</h3>
+                <p class="menu-card-price">IDR 13K</p>
+            </div>
+            <div class="menu-card">
+                <img src="assets/image/menu3.jpg"alt="teh">
+                <h3>Teh Ibu</h3>
+                <p class="menu-card-price">IDR 15K</p>
+            </div>
+            <div class="menu-card">
+                <img src="assets/image/menu4.jpg"alt="pisang">
+                <h3>Pisang Goreng</h3>
+                <p class="menu-card-price">IDR 10K</p>
+            </div>
+            <div class="menu-card">
+                <img src="assets/image/menu5.jpg"alt="kopi">
+                <h3>Roti Bakar</h3>
+                <p class="menu-card-price">IDR 8K</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Menu End-->
+
+    <!--Contact Start-->
+    <section id="pesan" class="contact">
+        <h2><span>Pesan &</span> Ambil</h2>
+        <p>Gak mau antri? pesan dulu aja. Ambil pesanan jika sudah siap tanpa harus menunggu</p>
+       
+
+        <div class="row">
+                <img src="assets/image/pict1.jpg" class="kontak-mnu">
+      
+        
+            <form name="form" id="form" >
+                <div class="input-group">
+                    <i data-feather="user"></i>
+                    <input type="text" placeholder="nama" name="nama" id="nama">
+                 </div>
+
+                <div class="input-group">
+                    <i data-feather="mail"></i>
+                    <input type="text" placeholder="email" name="email" id="email">
+                </div>
+
+                <div class="input-group">
+                    <i data-feather="phone"></i>
+                    <input type="text" placeholder="No Hp" name="hp" id="hp">
+                </div>
+                <div class="input-group">
+                    <i data-feather="edit-2"></i>
+                    <input type="text" placeholder="Tuliskan Pesanan" name="pesan" id="pesan">
+                </div>
+                <button class = "btn" onclick="checkForm()">Konfirmasi Pesananmu</button>
+          </form>
+        </div>
+    </section>
+    <!--Contact End-->
+
+    <!--Footer-->
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com"><i data-feather="instagram"></i></a>
+            <a href="https://mail.google.com/mail/"><i data-feather="mail"></i></a>
+            <a href="https://twitter.com/?lang=en"><i data-feather="twitter"></i></a>
+        </div>
+
+        <div class="links">
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#menu">Menu Kami</a>
+            <a href="#pesan">Pesan &  Ambil</a>
+        </div>
+
+        <div class="credit">
+            <p>Created by <a href="https://github.com/Pandu160402">Pandu Wahyudi_120140010</a>. |&copy; 2023.</p>
+        </div>
+    </footer>
+    <!--Icons-->
+    <script>
+        feather.replace()
+      </script>
+    
+    <!--JS-->
+    <script src="assets/script.js"></script>
+    
+</body>
+</html>
